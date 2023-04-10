@@ -1,0 +1,18 @@
+.header2{
+    background-color: #f3f6fb;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.bg1{
+    height: 150px;
+}
+.bg2{
+    width: 190px;
+    margin-top: -255px;
+}
+.header2 h3{
+    margin: 0;
+    font-size: 24px;
+    font-weight: 700;
+}

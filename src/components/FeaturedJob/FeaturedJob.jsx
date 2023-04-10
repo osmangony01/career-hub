@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 
 const FeaturedJob = ({ featuredJob }) => {
 
-    const { jobTitle, jobCompany, companyImgLogo, jobType, location, salary } = featuredJob;
+    const {id, jobTitle, jobCompany, companyImgLogo, jobType, location, salary } = featuredJob;
 
     return (
         <div className='job-card'>
@@ -29,7 +29,7 @@ const FeaturedJob = ({ featuredJob }) => {
                 </span>
             </p>
             <div>
-                <Link ><button className='btn-view-details'>View Details</button></Link>
+                <Link to={`/job-details/${id}`}><button className='btn-view-details'>View Details</button></Link>
             </div>
             
         </div>
