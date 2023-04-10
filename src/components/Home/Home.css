@@ -22,3 +22,9 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
 }
+
+.see-all-btn{
+    text-align: center;
+    margin: 25px 0;
+    padding: 0;
+}

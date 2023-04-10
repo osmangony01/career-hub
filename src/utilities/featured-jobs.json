@@ -19,6 +19,7 @@
         "educationalRequirement": "Bachelor's degree in Computer Science or a related field",
         "experience": "3+ years of experience in software development",
         "location": "California, USA",
+        "address": "123 Main St, Los Angeles, CA 90001",
         "companyImgLogo": "/images/Google_logo.svg",
         "contactInfo": {
             "email": "jobs@xyzcorp.com",
@@ -45,6 +46,7 @@
         "educationalRequirement": "Bachelor's degree in Computer Science or a related field",
         "experience": "3+ years of experience in software development",
         "location": "Washington, USA",
+        "address": "456 Oak Ave, Seattle, WA 98101",
         "companyImgLogo": "/images/Netflix_logo.svg",
         "contactInfo": {
             "email": "jobs@abcsoftware.com",
@@ -72,6 +74,7 @@
         "educationalRequirement": "Bachelor's degree in Business Administration or a related field",
         "experience": "5+ years of experience in product management",
         "location": "New York, USA",
+        "address": "789 Broadway, New York, NY 10001",
         "companyImgLogo": "/images/tesla.svg",
         "contactInfo": {
             "email": "jobs@abccompany.com",
@@ -98,6 +101,7 @@
         "educationalRequirement": "Bachelor's degree in Graphic Design or a related field",
         "experience": "2+ years of experience in graphic design",
         "location": "California, USA",
+        "address": "101 Elm St, San Francisco, CA 94101",
         "companyImgLogo": "/images/apple.svg",
         "contactInfo": {
             "email": "jobs@abccompany.com",
@@ -124,6 +128,7 @@
         "educationalRequirement": "Bachelor's degree in Marketing or a related field",
         "experience": "2+ years of experience in marketing",
         "location": "Texas, USA",
+        "address": "234 Maple St, Houston, TX 77001",
         "companyImgLogo": "/images/Amazon_logo.svg",
         "contactInfo": {
             "email": "jobs@ghicorp.com",
@@ -150,6 +155,7 @@
         "educationalRequirement": "Master's degree in Data Science or a related field",
         "experience": "3+ years of experience in data science",
         "location": "Washington, USA",
+        "address": "567 Pine St, Spokane, WA 99201",
         "companyImgLogo": "/images/Google_logo.svg",
         "contactInfo": {
             "email": "jobs@jklanalytics.com",
@@ -176,6 +182,7 @@
         "educationalRequirement": "Bachelor's degree in Computer Science or a related field",
         "experience": "3+ years of experience in front-end development",
         "location": "Illinois, USA",
+        "address": "890 Walnut St, Chicago, IL 60601",
         "companyImgLogo": "/images/Facebook_Logo.svg",
         "contactInfo": {
             "email": "jobs@mnotech.com",
@@ -202,6 +209,7 @@
         "educationalRequirement": "Bachelor's degree in Mathematics, Statistics, or a related field",
         "experience": "3+ years of experience in data analysis",
         "location": "Illinois, USA",
+        "address": "111 Chestnut St, Springfield, IL 62701",
         "companyImgLogo": "/images/Google_logo.svg",
         "contactInfo": {
             "email": "jobs@pqranalytics.com",

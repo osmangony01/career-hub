@@ -48,6 +48,9 @@ const Home = () => {
                             )
                     }
                 </div>
+               <dir className="see-all-btn"> 
+               <button className='btn-primary'>Sell All Jobs</button>
+               </dir>
             </div>
           
         </div>
