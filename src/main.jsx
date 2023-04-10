@@ -1,7 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import './index.css'
-
 import {
   createBrowserRouter,
   RouterProvider,
@@ -11,13 +10,14 @@ import Home from './components/Home/Home';
 import Statistics from './components/Statistics/Statistices';
 import Blog from './components/Blog/Blog';
 import AppliedJobs from './components/AppliedJobs/AppliedJobs';
+import loadFeaturedJobs from './loader/loadFeaturedJobs';
 
 const router = createBrowserRouter([
   {
     path: '/',
     element: <Layout />,
     children: [
-      { path: '/', element: <Home /> },
+      { path: '/', element: <Home />, loader: loadFeaturedJobs },
       { path: '/applied-jobs', element: <AppliedJobs /> },
       { path: '/blog', element: <Blog /> },
       { path: '/statistics', element: <Statistics /> },

@@ -1,0 +1,27 @@
+.header{
+    padding: 0 190px;
+    background-color: #edf1f9;
+}
+.header-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0 ;
+    gap: 20px;
+}
+
+.header-info img{
+    width: 516px;
+    height: 380px;
+    border-radius: 6px;
+}
+.dream-job{
+    color:#7E90FE;
+}
+.header-info h2{
+    font-size: 60px;
+    margin: 0;
+}
+.change-layout{
+    margin: 0 190px;
+}
