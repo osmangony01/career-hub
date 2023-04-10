@@ -1,0 +1,26 @@
+[
+    {
+        "id": "1001",
+        "img": "/images/merchant-icon.png",
+        "categoryName": "Account & Finance",
+        "availableAmount": "300 Jobs Available"
+    },
+    {
+        "id": "1002",
+        "img": "/images/creative-icon.png",
+        "categoryName": "Creative Design",
+        "availableAmount": "100+ Jobs Available"
+    },
+    {
+        "id": "1003",
+        "img": "/images/sales-icon.png",
+        "categoryName": "Marketing & Sales",
+        "availableAmount": "150 Jobs Available"
+    },
+    {
+        "id": "1004",
+        "img": "/images/engineering-icon.png",
+        "categoryName": "Engineering Job",
+        "availableAmount": "224 Jobs Available"
+    }
+]
