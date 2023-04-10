@@ -5,7 +5,9 @@ import './Header.css';
 const Header = () => {
     return (
         <div className=''>
-            <div className='header'><Navbar /></div>
+            <div className='header'>
+                <Navbar />
+            </div>
             <div className='header2'>
                 <img className='bg1' src="/images/header_bg2.svg" alt="bg1" />
                 <h3>This a text</h3>

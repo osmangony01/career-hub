@@ -1,9 +1,19 @@
 import React from 'react';
+import Header from '../Header/header';
 
 const AppliedJobs = () => {
     return (
         <div>
-            this is applied jobs
+            <>
+                <Header />
+            </>
+
+            <div className='change-layout'>
+                <div>
+                    this is applied job
+                </div>
+
+            </div>
         </div>
     );
 };

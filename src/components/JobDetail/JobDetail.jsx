@@ -2,20 +2,24 @@ import React from 'react';
 import './JobDetails.css';
 import Header from '../Header/header';
 import { useLoaderData } from 'react-router-dom';
+import { addToDb } from '../../utilities/fakedb';
 
 const JobDetails = () => {
     const jobDetail = useLoaderData();
-    const {jobTitle, jobDescription, jobResponsibility, educationalRequirement, experience, address, location, salary, contactInfo} = jobDetail;
+    const {id, jobTitle, jobDescription, jobResponsibility, educationalRequirement, experience, address, location, salary, contactInfo} = jobDetail;
     
     console.log(jobDetail);
 
+    const handleAddToCart = ()=>{
+        addToDb(id);
+    }
     return (
         <div>
             <>
                 <Header></Header>
             </>
 
-            <div className='change-layout mt8'>
+            <div className='change-layout'>
                 <div className='job-details'>
                     <div>
                         <p><b>Job Description:</b> {jobDescription}</p>
@@ -37,7 +41,7 @@ const JobDetails = () => {
                             <p><b>Email: </b>{contactInfo.email}</p>
                             <p><b>Address: </b>{`${address}, ${location}`}</p>
                         </div>
-                        <button className='btn-primary btn'>Apply Now</button>
+                        <button onClick={handleAddToCart} className='btn-primary btn'>Apply Now</button>
                     </div>
                 </div>
             </div>
