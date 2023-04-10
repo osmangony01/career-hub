@@ -13,6 +13,7 @@ const JobDetails = () => {
     const handleAddToCart = ()=>{
         addToDb(id);
     }
+    
     return (
         <div>
             <>
