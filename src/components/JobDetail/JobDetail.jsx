@@ -1,10 +1,13 @@
-import React from 'react';
+import React, { useContext, useEffect } from 'react';
 import './JobDetails.css';
 import Header from '../Header/header';
 import { useLoaderData } from 'react-router-dom';
 import { addToDb } from '../../utilities/fakedb';
+import { Context } from '../../utilities/Context';
 
 const JobDetails = () => {
+    const [context, setContext] = useContext(Context);
+
     const jobDetail = useLoaderData();
     const {id, jobTitle, jobDescription, jobResponsibility, educationalRequirement, experience, address, location, salary, contactInfo} = jobDetail;
     
@@ -14,6 +17,10 @@ const JobDetails = () => {
         addToDb(id);
     }
     
+    useEffect(()=>{
+        setContext("Jobs Details");
+    },[]);
+
     return (
         <div>
             <>

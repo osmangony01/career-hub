@@ -4,12 +4,13 @@ import { Link } from 'react-router-dom';
 
 const AppliedJob = ({ appliedJob }) => {
     const { id, jobTitle, jobCompany, companyImgLogo, jobType, location, salary } = appliedJob;
+    console.log(companyImgLogo)
 
     return (
         <div className='applied-job-card'>
             <div className='applied-job-details'>
                 <div className='company-img-area'>
-                    <img src={companyImgLogo} className='logo-img' alt="" />
+                    <img src={companyImgLogo} className='company-img' alt="" />
                 </div>
                 <div><p className='job-title'>{jobTitle}</p>
                     <p>{ jobCompany}</p>
@@ -31,6 +32,7 @@ const AppliedJob = ({ appliedJob }) => {
             <div>
                 <Link to={`/job-details/${id}`}><button className='btn-view-details'>View Details</button></Link>
             </div>
+            
         </div>
 
     );

@@ -1,9 +1,16 @@
-import React from 'react';
+import React, { useContext, useEffect } from 'react';
 import Header from '../Header/header';
 import './Blog.css';
 import Accordion from 'react-bootstrap/Accordion';
+import { Context } from '../../utilities/Context';
 
 const Blog = () => {
+    const [context, setContext] = useContext(Context);
+    
+    useEffect(()=>{
+        setContext("Blog");
+    },[]);
+    
     return (
         <div>
             <>
@@ -29,16 +36,6 @@ const Blog = () => {
                                     <li>a collection of services</li>
                                 </ul>
                             </p>
-
-
-
-
-
-
-
-
-
-
                             </Accordion.Body>
                         </Accordion.Item>
                         <Accordion.Item eventKey="2">

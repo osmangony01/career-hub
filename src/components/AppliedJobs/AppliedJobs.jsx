@@ -1,14 +1,20 @@
-import React, { useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import Header from '../Header/header';
 import { useLoaderData } from 'react-router-dom';
 import AppliedJob from '../AppliedJob/AppliedJob';
 import './AppliedJobs.css';
+import { Context } from '../../utilities/Context';
 
 const AppliedJobs = () => {
+    const [context, setContext] = useContext(Context);
 
     const appliedAllJobs = useLoaderData();
     const [appliedJobs , setAppliedJobs] = useState(appliedAllJobs);
 
+    useEffect(()=>{
+        setContext("Applied Jobs");
+    },[]);
+    
     console.log(appliedJobs);
     return (
         <div>

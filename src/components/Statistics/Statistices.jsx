@@ -1,9 +1,16 @@
-import React from 'react';
+import React, { useContext, useEffect } from 'react';
 import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, Label } from "recharts";
 import Header from '../Header/header';
 import './Statistics.css';
+import { Context } from '../../utilities/Context';
 
 const Statistics = () => {
+    const [context, setContext] = useContext(Context);
+    
+    useEffect(()=>{
+        setContext("Statistics");
+    },[]);
+
     const data = [
         { assignment: "A1", "Obtain Mark": 57, },
         { assignment: "A2", "Obtain Mark": 60, },
@@ -31,7 +38,7 @@ const Statistics = () => {
                             </defs>
                             <CartesianGrid strokeDasharray="3 3" />
                             <XAxis dataKey="assignment">
-                                <Label value="numbers of assignment" offset={-2} position="insideBottom" />
+                                <Label value="numbers of assignment" offset={-1} position="insideBottom" />
                             </XAxis>
                             <YAxis label={{ value: 'marks', angle: -90, position: 'insideLeft' }} />
                             <Tooltip />
