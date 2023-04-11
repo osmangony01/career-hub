@@ -1,0 +1,12 @@
+.statistics-info{
+    margin:80px 0;
+}
+.statistics-title{
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+.charts{
+    width: 70%;
+    margin: 0 auto;
+}
