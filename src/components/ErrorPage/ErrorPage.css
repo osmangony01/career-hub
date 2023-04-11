@@ -1,0 +1,29 @@
+.error-icon {
+    width: 100px;
+    height: 100px;
+}
+
+.error-container {
+    /* height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; */
+    /* width: 50%; */
+    margin: 0 auto;
+    text-align: center;
+    height: 100%;
+    margin-top: 200px;
+    
+}
+
+.error-btn {
+    color: blue;
+    border: 0;
+    text-decoration: none;
+}
+.error-btn:hover {
+    padding: 6px 25px;
+    border: 1px solid rgb(218, 216, 216);
+    background-color: rgb(227, 242, 255);
+    border-radius: 5px;
+}

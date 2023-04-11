@@ -16,12 +16,14 @@ import JobDetails from './components/JobDetail/JobDetail';
 import Header from './components/Header/header';
 import loadJobDetails from './loader/loadJobDetails';
 import cartAppliedJobLoader from './loader/cartAppliedJobLoader';
+import ErrorPage from './components/ErrorPage/ErrorPage';
 
 
 const router = createBrowserRouter([
   {
     path: '/',
     element: <Layout />,
+    errorElement: <ErrorPage />,
     children: [
       { path: '/', element: <Home />, loader: loadFeaturedJobs },
       { path: '/applied-jobs', element: <AppliedJobs />, loader: cartAppliedJobLoader },
