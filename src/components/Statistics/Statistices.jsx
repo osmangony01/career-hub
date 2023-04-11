@@ -30,8 +30,6 @@ const Statistics = () => {
                                 </linearGradient>
                             </defs>
                             <CartesianGrid strokeDasharray="3 3" />
-                            {/* <XAxis dataKey="assignment" />
-                            <YAxis /> */}
                             <XAxis dataKey="assignment">
                                 <Label value="numbers of assignment" offset={-2} position="insideBottom" />
                             </XAxis>
