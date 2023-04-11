@@ -8,10 +8,10 @@ const ErrorPage = () => {
         <section className='error-container'>
             <div className='error'>
                 <img className='error-icon' src="/images/error-icon.svg" alt="" />
-                <h2 className=''>
-                    <span className=''>Error</span> {status || 404}
+                <h2>
+                    <span>Error</span> {status || 404}
                 </h2>
-                <p className=''>
+                <p>
                     {error?.message}
                 </p>
                 <Link to='/' className='error-btn'>
