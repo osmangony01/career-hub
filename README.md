@@ -1,6 +1,6 @@
 ## AspirantHub 
 
-This AspirantHub app is build by React JS. In this website, you choose you desire job and also apply that jobs. And It has some additional pages like blog, statistics etc.
+This AspirantHub app is build by React JS. In this website, you choose your desire job and also apply that jobs. And It has some additional pages like blog, statistics etc.
 
 
 **Features of AspirantHub:**

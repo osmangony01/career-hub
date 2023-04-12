@@ -1,26 +1,33 @@
-.header2{
+.header2 {
     background-color: #f3f6fb;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.bg1{
+
+.bg1 {
     height: 150px;
 }
-.bg2{
+
+.bg2 {
     width: 190px;
     margin-top: -255px;
 }
-.header2 h3{
+
+.header2 h3 {
     margin: 0;
     font-size: 24px;
     font-weight: 700;
 }
+
 @media screen and (max-width:992px) {
-    .bg2, .bg1{
+
+    .bg2,
+    .bg1 {
         display: none;
     }
-    .header2{
+
+    .header2 {
         display: block;
         text-align: center;
         padding: 20px 0 40px 0;

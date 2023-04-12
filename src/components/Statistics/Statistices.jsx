@@ -30,7 +30,7 @@ const Statistics = () => {
                     <h3 className='statistics-title'>Assignment Analytics</h3>
                     <div className='charts'>
                         <ResponsiveContainer>
-                            <AreaChart data={data} margin={{top: 10, right: 30, left: 0, bottom: 30}}>
+                            <AreaChart data={data} margin={{ top: 10, right: 30, left: 0, bottom: 30 }}>
                                 <defs>
                                     <linearGradient id="marksColor" x1="0" y1="0" x2="0" y2="1">
                                         <stop offset="5%" stopColor="#8884d8" stopOpacity={0.8} />
@@ -46,7 +46,6 @@ const Statistics = () => {
                                 <Area type="monotone" dataKey="Obtain Mark" stroke="#8884d8" fill="url(#marksColor)" />
                             </AreaChart>
                         </ResponsiveContainer>
-
                     </div>
                 </div>
             </div>

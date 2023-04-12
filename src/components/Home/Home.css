@@ -1,78 +1,87 @@
-
-.header{
+.header {
     padding: 0 190px;
     background-color: #f3f6fb;
 }
-.header-info{
+
+.header-info {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 40px 0 ;
+    padding: 40px 0;
     gap: 20px;
 }
 
-.header-info img{
+.header-info img {
     width: 516px;
     height: 380px;
     border-radius: 6px;
 }
-.dream-job{
-    color:#7E90FE;
+
+.dream-job {
+    color: #7E90FE;
 }
-.header-info h2{
+
+.header-info h2 {
     font-size: 60px;
     margin: 0;
 }
 
-.jobs{
+.jobs {
     margin: 100px 0;
 }
 
-.jobs-title{
+.jobs-title {
     font-size: 36px;
     text-align: center;
     margin: 0;
 }
-.jobs-info{
+
+.jobs-info {
     text-align: center;
     margin: 20px 0;
-    
+
 }
-.category-card{
+
+.category-card {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
 }
-.featured-card{
+
+.featured-card {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
 }
 
-.see-all-btn{
+.see-all-btn {
     text-align: center;
     margin: 25px 0;
     padding: 0;
 }
 
 @media screen and (max-width:992px) {
-    .header{
+    .header {
         padding: 0px 100px;
     }
-    .header-info img{
+
+    .header-info img {
         max-width: 350px;
         height: 330px;
         border-radius: 6px;
     }
-    .header-info h2{
+
+    .header-info h2 {
         font-size: 32px;
         margin: 0;
     }
-    .featured-card{
+
+    .featured-card {
         grid-template-columns: repeat(1, 1fr);
-       
+
     }
-    .category-card{
+
+    .category-card {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;
@@ -80,23 +89,25 @@
 }
 
 @media screen and (max-width:576px) {
-    .header{
+    .header {
         padding: 0px 50px;
     }
-    .header-info{
+
+    .header-info {
         flex-direction: column;
         padding: 0;
         gap: 30px;
     }
 
-    .category-card{
+    .category-card {
         grid-template-columns: repeat(1, 1fr);
-       
+
     }
-    .header-info img{
+
+    .header-info img {
         width: 330px;
         height: 300px;
         border-radius: 6px;
     }
-    
+
 }

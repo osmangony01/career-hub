@@ -4,7 +4,6 @@ import './Layout.css';
 import { Context } from '../../utilities/Context';
 import Footer from '../Footer/Footer';
 
-
 const Layout = () => {
     const [context, setContext] = useState("context");
 
@@ -15,7 +14,6 @@ const Layout = () => {
             </div>
             <Footer />
         </Context.Provider>
-
     );
 };
 

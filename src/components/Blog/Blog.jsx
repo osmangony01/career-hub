@@ -6,11 +6,11 @@ import { Context } from '../../utilities/Context';
 
 const Blog = () => {
     const [context, setContext] = useContext(Context);
-    
-    useEffect(()=>{
+
+    useEffect(() => {
         setContext("Blog");
-    },[]);
-    
+    }, []);
+
     return (
         <div>
             <>
@@ -23,19 +23,19 @@ const Blog = () => {
                         <Accordion.Item eventKey="1">
                             <Accordion.Header>01. When you use contextAPI?</Accordion.Header>
                             <Accordion.Body>
-                            <p>The main idea of using the context is to allow your components to access global data and re-render when that global data is changed. Context solves the props drilling problem: when you have to pass down props from parents to children.</p>
-                            <p>You can hold inside the context:</p>
-                            <p>
-                                <ul>
-                                    <li>global state</li>
-                                    <li>theme</li>
-                                    <li>application configuration</li>
-                                    <li>authenticated user name</li>
-                                    <li>user settings</li>
-                                    <li>preferred language</li>
-                                    <li>a collection of services</li>
-                                </ul>
-                            </p>
+                                <p>The main idea of using the context is to allow your components to access global data and re-render when that global data is changed. Context solves the props drilling problem: when you have to pass down props from parents to children.</p>
+                                <p>You can hold inside the context:</p>
+                                <p>
+                                    <ul>
+                                        <li>global state</li>
+                                        <li>theme</li>
+                                        <li>application configuration</li>
+                                        <li>authenticated user name</li>
+                                        <li>user settings</li>
+                                        <li>preferred language</li>
+                                        <li>a collection of services</li>
+                                    </ul>
+                                </p>
                             </Accordion.Body>
                         </Accordion.Item>
                         <Accordion.Item eventKey="2">

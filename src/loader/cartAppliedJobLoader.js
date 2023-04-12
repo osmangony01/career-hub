@@ -4,8 +4,6 @@ const cartAppliedJobLoader = async () => {
     const loadedJobs = await fetch('/featured-jobs.json');
     const jobs = await loadedJobs.json();
 
-
-    // if cart data is in database, you have to use async await
     const storedCart = getShoppingCart();
     const addedJobs = [];
     if (storedCart) {

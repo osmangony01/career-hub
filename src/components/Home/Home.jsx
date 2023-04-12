@@ -8,12 +8,10 @@ import Navbar from '../Navbar/Navbar';
 const Home = () => {
 
     const [jobCategories, setJobCategories] = useState([]);
-
     const allFeaturedJobs = useLoaderData();
     const takeFourData = allFeaturedJobs.slice(0, 4)
-    
     const [featuredJobs, setFeaturedJobs] = useState(takeFourData);
-    const [isSeeBtn, setIsSeeBtn]= useState(true);
+    const [isSeeBtn, setIsSeeBtn] = useState(true);
 
     useEffect(() => {
         fetch('/job-categories.json')
@@ -25,9 +23,6 @@ const Home = () => {
         setFeaturedJobs(allFeaturedJobs);
         setIsSeeBtn(false);
     }
-
-    console.log(jobCategories);
-    console.log(featuredJobs);
 
     return (
         <div>
@@ -46,7 +41,6 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-
             <div className='change-layout'>
                 <div className='jobs'>
                     <h1 className='jobs-title'>Job Category List</h1>
@@ -76,7 +70,7 @@ const Home = () => {
                         }
                     </div>
                     <dir className="see-all-btn">
-                       {isSeeBtn &&  <button className='btn-primary' onClick={handleSeeBtn}>Sell All Jobs</button>}
+                        {isSeeBtn && <button className='btn-primary' onClick={handleSeeBtn}>Sell All Jobs</button>}
                     </dir>
                 </div>
             </div>

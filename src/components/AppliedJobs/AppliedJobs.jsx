@@ -8,13 +8,12 @@ import Select, { components } from "react-select";
 
 const Control = ({ children, ...props }) => (
     <components.Control {...props}>
-      {children}
+        {children}
     </components.Control>
-  );
+);
 
 const AppliedJobs = () => {
     const [context, setContext] = useContext(Context);
-
     const appliedAllJobs = useLoaderData();
     const [appliedJobs, setAppliedJobs] = useState(appliedAllJobs);
 
@@ -23,16 +22,11 @@ const AppliedJobs = () => {
     }, []);
 
     const handleChange = (selected) => {
-        //console.log(selected.value);
         const selectedValue = selected.value;
-        //let selectedAppliedJobs = [];
-        let selectedAppliedJobs = appliedAllJobs.filter(job => job.jobType[0]== selectedValue || job.jobType[1]== selectedValue);
-
-        // console.log(appliedJobs);
-        // console.log(selectedAppliedJobs);
+        let selectedAppliedJobs = appliedAllJobs.filter(job => job.jobType[0] == selectedValue || job.jobType[1] == selectedValue);
         setAppliedJobs(selectedAppliedJobs);
-
     }
+
     const options = [
         { value: "Full-time", label: "Full-time" },
         { value: "Part-time", label: "Part-time" },
@@ -40,7 +34,6 @@ const AppliedJobs = () => {
         { value: "Remote", label: "Remote" },
     ];
 
-    // console.log(appliedJobs);
     return (
         <div>
             <>

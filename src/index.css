@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
 
-body{
+body {
     font-family: 'Work Sans', sans-serif;
     margin: 0;
-    padding:0;
+    padding: 0;
 }
 
 /* #root{
@@ -19,7 +19,8 @@ body{
     text-decoration: none;
     font-size: 17px;
 }
-.btn-view-details{
+
+.btn-view-details {
     border: 0;
     background: linear-gradient(90deg, #7E90FE 0%, #9873FF 100%);
     border-radius: 6px;
@@ -28,31 +29,36 @@ body{
     text-decoration: none;
     font-size: 17px;
 }
-.change-layout{
+
+.change-layout {
     margin: 0 190px;
 }
+
 @media screen and (max-width:992px) {
-    .change-layout{
+    .change-layout {
         margin: 0 150px;
     }
-    .btn-view-details{ 
+
+    .btn-view-details {
         padding: 8px 12px;
         font-size: 16px;
     }
 }
+
 @media screen and (max-width:778px) {
-    .change-layout{
+    .change-layout {
         margin: 0 100px;
     }
-    .btn-view-details{ 
+
+    .btn-view-details {
         padding: 6px 10px;
         font-size: 15px;
     }
 }
 
 @media screen and (max-width:576px) {
-    .change-layout{
+    .change-layout {
         margin: 0 50px;
     }
-    
+
 }

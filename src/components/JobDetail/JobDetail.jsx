@@ -11,19 +11,16 @@ import { faLocationDot } from '@fortawesome/free-solid-svg-icons'
 
 const JobDetails = () => {
     const [context, setContext] = useContext(Context);
-
     const jobDetail = useLoaderData();
-    const {id, jobTitle, jobDescription, jobResponsibility, educationalRequirement, experience, address, location, salary, contactInfo} = jobDetail;
-    
-    // console.log(jobDetail);
+    const { id, jobTitle, jobDescription, jobResponsibility, educationalRequirement, experience, address, location, salary, contactInfo } = jobDetail;
 
-    const handleAddToCart = ()=>{
+    const handleAddToCart = () => {
         addToDb(id);
     }
-    
-    useEffect(()=>{
+
+    useEffect(() => {
         setContext("Jobs Details");
-    },[]);
+    }, []);
 
     return (
         <div>
@@ -49,8 +46,8 @@ const JobDetails = () => {
                             <p><img className='currency-icon' src="/images/job-title.svg" alt="" /> <b>Job Title: </b>{jobTitle}</p>
                             <h3 className='contact-info'>Contact Information</h3>
                             <hr />
-                            <p><span className='card-icon'><FontAwesomeIcon icon={faPhoneAlt}/></span><b>Phone: </b> {contactInfo.phone}</p>
-                            <p><span className='card-icon'><FontAwesomeIcon icon={faEnvelope}/></span><b>Email: </b>{contactInfo.email}</p>
+                            <p><span className='card-icon'><FontAwesomeIcon icon={faPhoneAlt} /></span><b>Phone: </b> {contactInfo.phone}</p>
+                            <p><span className='card-icon'><FontAwesomeIcon icon={faEnvelope} /></span><b>Email: </b>{contactInfo.email}</p>
                             <p><span className='card-icon'><FontAwesomeIcon icon={faLocationDot} /></span><b>Address: </b>{`${address}, ${location}`}</p>
                         </div>
                         <button onClick={handleAddToCart} className='btn-primary btn'>Apply Now</button>

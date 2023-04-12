@@ -27,14 +27,13 @@ const AppliedJob = ({ appliedJob }) => {
                             <img src="/images/currency_icon.svg" className='currency-icon' alt="" />
                             Salary: {salary}
                         </span>
-                    </p></div>
+                    </p>
+                </div>
             </div>
             <div>
                 <Link to={`/job-details/${id}`}><button className='btn-view-details'>View Details</button></Link>
             </div>
-
         </div>
-
     );
 };
 

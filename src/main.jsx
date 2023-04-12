@@ -2,10 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import './index.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {
-  createBrowserRouter,
-  RouterProvider,
-} from "react-router-dom";
+import { createBrowserRouter, RouterProvider,} from "react-router-dom";
 import Layout from './components/Layout/Layout';
 import Home from './components/Home/Home';
 import Statistics from './components/Statistics/Statistices';
@@ -31,13 +28,13 @@ const router = createBrowserRouter([
       { path: '/statistics', element: <Statistics /> },
       { path: '/job-details/:id', element: <JobDetails />, loader: loadJobDetails }
     ]
-
   },
   {
     path: 'header',
     element: <Header />,
   }
 ])
+
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>

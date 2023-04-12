@@ -1,5 +1,4 @@
 
-
 const loadJobDetails = async({ params }) => {
     const id = params.id;
     const res = await fetch('/featured-jobs.json');

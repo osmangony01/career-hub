@@ -1,19 +1,21 @@
-.statistics-info{
-    margin:80px 0;
+.statistics-info {
+    margin: 80px 0;
 }
-.statistics-title{
+
+.statistics-title {
     font-size: 28px;
     font-weight: 700;
     margin-bottom: 40px;
 }
-.charts{
+
+.charts {
     width: 70%;
     height: 300px;
     margin: 0 auto;
 }
 
 @media screen and (max-width:992px) {
-    .charts{
+    .charts {
         width: 100%;
     }
 }

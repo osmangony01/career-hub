@@ -6,7 +6,7 @@ const Footer = () => {
         <div className='footer'>
             <div className='footer-info'>
                 <div>
-                    <h2>CareerHub</h2>
+                    <h2>AspirantHub</h2>
                     <p><small>There are many variations of passages of Lorem Ipsum , but the majority have suffered alteration in some form.</small></p>
                     <div className='footer-logo'>
                         <span><img className='logo-img' src="/images/facebook.svg" alt="" /></span>
@@ -44,8 +44,8 @@ const Footer = () => {
             </div>
             <hr />
             <div className='footer-info-bottom'>
-                <p><small>@2023 CareerHub. All Rights Reserved</small></p>
-                <p><small>Powered by CareerHub</small></p>
+                <p><small>@2023 AspirantHub. All Rights Reserved</small></p>
+                <p><small>Powered by AspirantHub</small></p>
             </div>
         </div>
     );
