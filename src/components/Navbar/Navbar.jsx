@@ -43,7 +43,7 @@ const Navbar = () => {
 
         <div>
             <nav className='nav'>
-                <p className='title'>JobHub</p>
+                <p className='title'>AspirantHub</p>
                 <div>
                     <ActiveLink to="/">Home</ActiveLink>
                     <ActiveLink to="/applied-jobs">Applied Jobs</ActiveLink>
