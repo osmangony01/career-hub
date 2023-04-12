@@ -12,27 +12,28 @@ const AppliedJob = ({ appliedJob }) => {
                 <div className='company-img-area'>
                     <img src={companyImgLogo} className='company-img' alt="" />
                 </div>
-                <div><p className='job-title'>{jobTitle}</p>
-                    <p>{ jobCompany}</p>
+                <div className='job-info'>
+                    <p className='job-title'>{jobTitle}</p>
+                    <p>{jobCompany}</p>
                     <p>
-                        <button className='btn-job-type'>{ jobType[0]}</button>
-                        <button className='btn-job-type'>{jobType[1] }</button>
+                        <button className='btn-job-type'>{jobType[0]}</button>
+                        <button className='btn-job-type'>{jobType[1]}</button>
                     </p>
                     <p className='loc-salary-info'>
                         <span className='location'>
                             <img src="/images/location-icon.svg" className='location-icon' alt="" />
-                            { location}
+                            {location}
                         </span>
                         <span className='salary'>
                             <img src="/images/currency_icon.svg" className='currency-icon' alt="" />
-                            Salary: {salary }
+                            Salary: {salary}
                         </span>
                     </p></div>
             </div>
             <div>
                 <Link to={`/job-details/${id}`}><button className='btn-view-details'>View Details</button></Link>
             </div>
-            
+
         </div>
 
     );

@@ -8,5 +8,12 @@
 }
 .charts{
     width: 70%;
+    height: 300px;
     margin: 0 auto;
+}
+
+@media screen and (max-width:992px) {
+    .charts{
+        width: 100%;
+    }
 }

@@ -24,3 +24,50 @@
     color: white;
     margin: 0;
 }
+
+.nav2{
+    display: none;
+    padding: 32px 0px;
+}
+.nav2 a{
+    text-decoration: none;
+    color: black;
+    display: block;
+    text-align: center;
+    padding: 3px 0;
+}
+.btn-primary2 {
+    border: 0;
+    background: linear-gradient(90deg, #7E90FE 0%, #9873FF 100%);
+    border-radius: 6px;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 17px;
+}
+.btn-primary2 a{
+    text-decoration: none;
+    color: white;
+    margin: 0;
+}
+.nav-title{
+    display: flex;
+    justify-content: space-between;
+}
+.bar-icon{
+    width: 24px;
+    height: 24px;
+}
+.nav2-info{
+    text-align: center;
+    margin: 0 auto;
+}
+
+@media screen and (max-width:778px) {
+    .nav{
+        display: none;
+    }
+    .nav2{
+        display: block;
+    }
+}

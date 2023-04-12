@@ -16,7 +16,7 @@ const Home = () => {
     const [isSeeBtn, setIsSeeBtn]= useState(true);
 
     useEffect(() => {
-        fetch('/src/utilities/job-categories.json')
+        fetch('/job-categories.json')
             .then(res => res.json())
             .then(data => setJobCategories(data))
     }, [])

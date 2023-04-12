@@ -16,3 +16,13 @@
     font-size: 24px;
     font-weight: 700;
 }
+@media screen and (max-width:992px) {
+    .bg2, .bg1{
+        display: none;
+    }
+    .header2{
+        display: block;
+        text-align: center;
+        padding: 20px 0 40px 0;
+    }
+}

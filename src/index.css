@@ -31,3 +31,28 @@ body{
 .change-layout{
     margin: 0 190px;
 }
+@media screen and (max-width:992px) {
+    .change-layout{
+        margin: 0 150px;
+    }
+    .btn-view-details{ 
+        padding: 8px 12px;
+        font-size: 16px;
+    }
+}
+@media screen and (max-width:778px) {
+    .change-layout{
+        margin: 0 100px;
+    }
+    .btn-view-details{ 
+        padding: 6px 10px;
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .change-layout{
+        margin: 0 50px;
+    }
+    
+}

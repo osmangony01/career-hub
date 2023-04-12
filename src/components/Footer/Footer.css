@@ -32,3 +32,22 @@
     width: 40px;
     margin-right: 10px;
 }
+@media screen and (max-width:992px){
+    .footer{
+        padding: 80px 80px;
+    }
+    .footer-info{
+        grid-template-columns: 1fr 1fr 1fr ;
+    }
+}
+@media screen and (max-width:786px){
+    
+}
+@media screen and (max-width:576px){
+    .footer{
+        padding: 80px 50px;
+    }
+    .footer-info{
+        grid-template-columns: 1fr 1fr ;
+    }
+}

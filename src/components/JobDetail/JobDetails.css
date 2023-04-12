@@ -28,3 +28,20 @@
     width: 100%;
     margin-top: 15px;
 }
+.currency-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 5px;
+    color: gray;
+}
+.card-icon{
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+    color: gray; 
+}
+@media screen and (max-width:778px) {
+    .job-details{
+        grid-template-columns: 1fr;
+    }
+}
