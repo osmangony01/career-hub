@@ -29,10 +29,11 @@
     margin-top: 15px;
 }
 .currency-icon {
+    margin: 0;
     width: 24px;
     height: 24px;
     margin-right: 5px;
-    color: gray;
+    color: rgb(153, 152, 152);
 }
 .card-icon{
     width: 24px;

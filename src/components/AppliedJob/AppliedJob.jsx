@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 
 const AppliedJob = ({ appliedJob }) => {
     const { id, jobTitle, jobCompany, companyImgLogo, jobType, location, salary } = appliedJob;
-    console.log(companyImgLogo)
 
     return (
         <div className='applied-job-card'>

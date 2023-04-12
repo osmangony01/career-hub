@@ -4,18 +4,43 @@ import { useLoaderData } from 'react-router-dom';
 import AppliedJob from '../AppliedJob/AppliedJob';
 import './AppliedJobs.css';
 import { Context } from '../../utilities/Context';
+import Select, { components } from "react-select";
+
+const Control = ({ children, ...props }) => (
+    <components.Control {...props}>
+      {children}
+    </components.Control>
+  );
 
 const AppliedJobs = () => {
     const [context, setContext] = useContext(Context);
 
     const appliedAllJobs = useLoaderData();
-    const [appliedJobs , setAppliedJobs] = useState(appliedAllJobs);
+    const [appliedJobs, setAppliedJobs] = useState(appliedAllJobs);
 
-    useEffect(()=>{
+    useEffect(() => {
         setContext("Applied Jobs");
-    },[]);
-    
-    console.log(appliedJobs);
+    }, []);
+
+    const handleChange = (selected) => {
+        //console.log(selected.value);
+        const selectedValue = selected.value;
+        //let selectedAppliedJobs = [];
+        let selectedAppliedJobs = appliedAllJobs.filter(job => job.jobType[0]== selectedValue || job.jobType[1]== selectedValue);
+
+        // console.log(appliedJobs);
+        // console.log(selectedAppliedJobs);
+        setAppliedJobs(selectedAppliedJobs);
+
+    }
+    const options = [
+        { value: "Full-time", label: "Full-time" },
+        { value: "Part-time", label: "Part-time" },
+        { value: "Onsite", label: "Onsite" },
+        { value: "Remote", label: "Remote" },
+    ];
+
+    // console.log(appliedJobs);
     return (
         <div>
             <>
@@ -23,6 +48,13 @@ const AppliedJobs = () => {
             </>
             <div className='change-layout'>
                 <div className='applied-jobs'>
+                    <div className='filter-option'>
+                        <Select
+                            onChange={handleChange}
+                            components={{ Control }}
+                            options={options}
+                        />
+                    </div>
                     {
                         appliedJobs.map(appliedJob =>
                             <AppliedJob

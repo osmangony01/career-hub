@@ -15,7 +15,7 @@ const JobDetails = () => {
     const jobDetail = useLoaderData();
     const {id, jobTitle, jobDescription, jobResponsibility, educationalRequirement, experience, address, location, salary, contactInfo} = jobDetail;
     
-    console.log(jobDetail);
+    // console.log(jobDetail);
 
     const handleAddToCart = ()=>{
         addToDb(id);
@@ -45,8 +45,8 @@ const JobDetails = () => {
                         <div className='job-details-card'>
                             <h3>Job Details</h3>
                             <hr />
-                            <p><span><img className='currency-icon' src="/images/currency_icon.svg" alt="" /></span><b>Salary: </b>{salary}</p>
-                            <p> <b>Job Title: </b>{jobTitle}</p>
+                            <p><img className='currency-icon' src="/images/currency_icon.svg" alt="" /><b>Salary: </b>{salary}</p>
+                            <p><img className='currency-icon' src="/images/job-title.svg" alt="" /> <b>Job Title: </b>{jobTitle}</p>
                             <h3 className='contact-info'>Contact Information</h3>
                             <hr />
                             <p><span className='card-icon'><FontAwesomeIcon icon={faPhoneAlt}/></span><b>Phone: </b> {contactInfo.phone}</p>
